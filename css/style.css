@@ -12,12 +12,13 @@ html {
     scroll-behavior: smooth;
 }
 
-p{
+p {
     color: #333333;
 }
 
 header {
     height: 100px;
+    background-color: #d63031;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,7 +63,7 @@ header {
 /* final menu burguer ao clicar */
 
 .menu-bars {
-    color: #d63031;
+    color: white;
     text-decoration: none;
     font-size: 2.5rem;
     justify-content: right;
@@ -88,7 +89,7 @@ header {
 
 .title1 {
     color: black;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'DM Mono', monospace;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
@@ -103,13 +104,22 @@ header {
 .banner a {
     display: inline-block;
     text-decoration: none;
-    color: #d63031;
-    border: 2px solid #d63031;
     border-radius: 20px;
     text-transform: uppercase;
     padding: 10px 20px;
     margin: 15px;
     transition: 0.4s linear;
+}
+
+.btn-banner1 {
+    color: #d63031;
+    border: 2px solid #d63031;
+}
+
+.btn-banner2 {
+    color: white;
+    border: 2px solid #d63031;
+    background-color: #d63031;
 }
 
 .wrapper-section {
@@ -160,7 +170,7 @@ form {
 form p>a,
 span {
     margin: 7px;
-    color: #8e44ad;
+    color: #d63031;
     font-weight: bold;
 }
 
@@ -241,6 +251,7 @@ form>button {
 
 .content-timeline p {
     margin-left: 12px;
+    text-align: left;
 }
 
 .content-timeline:before {
@@ -309,8 +320,8 @@ form>button {
 }
 
 .po img {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 100%;
 }
 
@@ -319,10 +330,6 @@ form>button {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
-}
-
-.p-desc{
-    color: #333333;
 }
 
 footer {
@@ -425,9 +432,9 @@ footer {
         display: block;
     }
     .nav-menu a {
-        margin-left: 70px;
+        margin-left: 50px;
         text-decoration: none;
-        color: #d63031;
+        color: white;
         font-weight: 500;
         padding: 5px 20px;
         transition: 0.7s all;
@@ -436,22 +443,26 @@ footer {
         text-decoration: underline;
     }
     #login a {
-        color: #d63031;
+        color: white;
         text-decoration: none;
-        border: #d63031 2px solid;
+        border: white 2px solid;
         border-radius: 20px;
         padding: 5px 20px;
         cursor: pointer;
         position: relative;
     }
     #login a:hover {
-        color: white;
-        background-color: #d63031;
+        color: #d63031;
+        background-color: white;
         transition: 0.8s linear;
     }
-    .banner a:hover {
+    .btn-banner1:hover {
         color: #fff;
         background: #d63031;
+    }
+    .btn-banner2:hover {
+        color: #d63031;
+        background: #fff;
     }
     .wrapper-section {
         grid-template-columns: 1fr 1fr;
@@ -537,38 +548,34 @@ footer {
     }
 }
 
+
 /* CSS DA PÁGINA INICIAL */
 
-.person label:hover{
+.person label:hover {
     opacity: 40%;
     transition: all .4s linear;
 }
 
-.linha{
+.linha {
     height: 1px;
     background-color: #d63031;
 }
 
-.banner-inicial img{
+.banner-inicial img {
     width: 100%;
 }
 
-p{
+p {
     text-align: center;
     font-size: 18px;
 }
 
-.p-desc{
-    max-width: 300px;
-    padding: 50px;
-}
-
-.strong1{
+.strong1 {
     font-size: 30px;
     color: #d63031;
 }
 
-.ultimo{
+.ultimo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 50px;
@@ -577,7 +584,7 @@ p{
     padding: 30px;
 }
 
-.finn2{
+.finn2 {
     width: 200px;
     height: 200px;
     display: grid;
@@ -587,8 +594,8 @@ p{
     padding: 5px;
 }
 
-@media(min-width: 600px){
-    .fnn{
+@media(min-width: 600px) {
+    .fnn {
         width: 160px;
         height: 160px;
         display: grid;
@@ -598,8 +605,7 @@ p{
         max-width: 450px;
         padding: 5px;
     }
-
-    .ultimo{
+    .ultimo {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 50px;
@@ -607,8 +613,7 @@ p{
         max-width: 420px;
         padding: 30px;
     }
-    
-    .finn2{
+    .finn2 {
         width: 200px;
         height: 200px;
         display: grid;
@@ -619,8 +624,8 @@ p{
     }
 }
 
-@media(min-width: 1000px){
-    .inn{
+@media(min-width: 1000px) {
+    .inn {
         width: 160px;
         height: 160px;
         display: grid;
@@ -628,8 +633,7 @@ p{
         max-width: 1000px;
         padding: 5px;
     }
-    
-    .ultimo{
+    .ultimo {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
@@ -637,11 +641,10 @@ p{
         max-width: 850px;
         padding: 25px;
     }
-    .ultimo img{
+    .ultimo img {
         margin-top: -50px;
     }
-    
-    .finn2{
+    .finn2 {
         width: 200px;
         height: 200px;
         display: grid;
@@ -650,8 +653,8 @@ p{
         max-width: 600px;
         padding: 5px;
     }
-    
 }
+
 
 /* FIM DA PÁGINA INICIAL 
 
@@ -659,7 +662,7 @@ p{
 
 COMEÇO DA PÁGINA SOBRE*/
 
-.imgsobre{
+.imgsobre {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
@@ -668,7 +671,7 @@ COMEÇO DA PÁGINA SOBRE*/
     padding: 15px;
 }
 
-.imgsobre img{
+.imgsobre img {
     width: 250px;
     height: 250px;
     display: grid;
@@ -678,16 +681,16 @@ COMEÇO DA PÁGINA SOBRE*/
     padding: 15px;
 }
 
-.strong2{
+.strong2 {
     font-size: 20px;
 }
 
-.textsobre{
+.textsobre {
     text-align: justify;
 }
 
-@media(min-width: 600px){
-    .imgsobre{
+@media(min-width: 600px) {
+    .imgsobre {
         display: grid;
         grid-gap: 10px;
         margin: 0 auto;
@@ -696,8 +699,8 @@ COMEÇO DA PÁGINA SOBRE*/
     }
 }
 
-@media(min-width: 1000px){
-    .imgsobre{
+@media(min-width: 1000px) {
+    .imgsobre {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
@@ -705,10 +708,11 @@ COMEÇO DA PÁGINA SOBRE*/
         max-width: 1000px;
         padding: 25px;
     }
-    .imgsobre img{
+    .imgsobre img {
         margin-top: -50px;
     }
 }
+
 
 /* FIM DA PÁGINA SOBRE
 
@@ -716,11 +720,11 @@ COMEÇO DA PÁGINA SOBRE*/
 
 COMEÇO DA PÁGINA PROJETOS */
 
-.item1{
+.item1 {
     margin-top: 50px;
 }
 
-.item label{
+.item label {
     display: block;
     padding: 10px;
     background-color: #f1f1f1;
@@ -730,12 +734,12 @@ COMEÇO DA PÁGINA PROJETOS */
     border-bottom: solid 2px #aaaaaa;
 }
 
-.item label:hover{
+.item label:hover {
     background-color: #d63031;
     transition: all .4s linear;
 }
 
-.item ul{
+.item ul {
     width: 100%;
     list-style: none;
     overflow: hidden;
@@ -743,11 +747,11 @@ COMEÇO DA PÁGINA PROJETOS */
     transition: all .4s linear;
 }
 
-.item input{
+.item input {
     display: none;
 }
 
-.item ul li a{
+.item ul li a {
     width: 100%;
     height: 20px;
     display: block;
@@ -755,68 +759,66 @@ COMEÇO DA PÁGINA PROJETOS */
     border-bottom: solid 2px #d63031;
 }
 
-.item input:checked ~ ul{
+.item input:checked~ul {
     height: auto;
     max-height: 200px;
     transform: all;
 }
 
-.li{
+.li {
     max-width: 300px;
 }
 
-@media(min-width: 400px){
-    .li{
+@media(min-width: 400px) {
+    .li {
         max-width: 380px;
     }
 }
 
-@media(min-width: 500px){
-    .li{
+@media(min-width: 500px) {
+    .li {
         max-width: 480px;
     }
 }
 
-@media(min-width: 600px){
-    .li{
+@media(min-width: 600px) {
+    .li {
         max-width: 580px;
     }
 }
 
-@media(min-width: 700px){
-    .li{
+@media(min-width: 700px) {
+    .li {
         max-width: 680px;
     }
 }
 
-@media(min-width: 800px){
-    .li{
+@media(min-width: 800px) {
+    .li {
         max-width: 780px;
     }
 }
 
-@media(min-width: 900px){
-    .li{
+@media(min-width: 900px) {
+    .li {
         max-width: 880px;
     }
 }
-@media(min-width: 1000px){
-    .li{
+
+@media(min-width: 1000px) {
+    .li {
         max-width: 980px;
     }
 }
-@media(min-width: 1100px){
-    .li{
+
+@media(min-width: 1100px) {
+    .li {
         max-width: 1080px;
     }
 }
-@media(min-width: 1200px){
-    .li{
+
+@media(min-width: 1200px) {
+    .li {
         max-width: 1180px;
     }
 }
-
-
-
-
-
