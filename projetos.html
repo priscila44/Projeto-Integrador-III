@@ -11,16 +11,21 @@
 
 <body>
     <header>
-        <img class="logo" src="img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior">
-        <nav class="nav-menu">
-            <a href="inicial.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="#">Contato</a>
+        <nav>
+            <ul>
+                <img class="logo" src="/img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior">
+                <li class="items items-hover"><a href="#">Início</a></li>
+                <li class="items items-hover"><a href="#">Sobre</a></li>
+                <li class="items items-hover"><a href="#">Projetos</a></li>
+                <li class="items items-hover"><a href="#">Eventos</a></li>
+                <li class="items items-hover"><a href="#">Contato</a></li>
+                <li class=" items login "><a href="#">Login</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+
+            </ul>
+
         </nav>
-        <div id="login"> <a href="#">Login</a></div>
-        <a href="#" class="menu-bars"><i class="fas fa-bars"></i></a>
+
     </header>
 
     <div class="banner-inicial"><img src="img/banner-projetos.jpg" alt=""></div>
@@ -112,6 +117,15 @@
     <script src="js/function.js"></script>
     <script src="https://kit.fontawesome.com/1060000e07.js" crossorigin="anonymous"></script>
     <script src="js/function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
 </body>
 
 </html>

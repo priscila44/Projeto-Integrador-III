@@ -11,24 +11,24 @@
 </head>
 
 <body>
-
     <header>
+        <nav>
+            <ul>
+                <img class="logo" src="/img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior">
+                <li class="items items-hover"><a href="#">Início</a></li>
+                <li class="items items-hover"><a href="#">Sobre</a></li>
+                <li class="items items-hover"><a href="#">Projetos</a></li>
+                <li class="items items-hover"><a href="#">Eventos</a></li>
+                <li class="items items-hover"><a href="#">Contato</a></li>
+                <li class=" items login "><a href="#">Login</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
 
-        <img class="logo" src="/img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior">
-        <nav class="nav-menu">
-            <a href="">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Eventos</a>
-            <a href="#">Contato</a>
+            </ul>
 
         </nav>
 
-        <div id="login"> <a href="#">Login</a></div>
-
-        <a href="#" class="menu-bars"><i class="fas fa-bars"></i></a>
-
     </header>
+
     <section class="banner">
         <h1 class="title1">Pentakill 2020</h1>
         <p> Vocês pediram e Fatec Jr. atendeu! venha participar do Campeonato <span style="text-transform: uppercase;"> Pentakill Fatec 2020!</span>Não importa qual o seu nível ou elo, muito menos sua posição no jogo, reúna seus amigos e venha disputar o
@@ -193,6 +193,15 @@
     <script src="js/function.js"></script>
     <script src="https://kit.fontawesome.com/1060000e07.js" crossorigin="anonymous"></script>
     <script src="js/function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
 </body>
 
 
