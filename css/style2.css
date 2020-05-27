@@ -76,7 +76,7 @@
             height: 900px;
         }
         .photo {
-            height: 1000px;
+            height: 500px;
             width: 700px;
         }
     }
@@ -115,9 +115,6 @@
         .accordion-item {
             width: auto;
         }
-        .photo {
-            height: 300px;
-        }
         .person {
             display: flex;
             justify-content: flex-start;
@@ -147,10 +144,10 @@
         .content-timeline {
             width: 600px;
         }
-        .photo {
+        /* .photo {
             height: 800px;
             width: 500px;
-        }
+        } */
         .person {
             display: flex;
             justify-content: space-around;
