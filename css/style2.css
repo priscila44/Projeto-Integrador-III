@@ -76,7 +76,7 @@
             height: 900px;
         }
         .photo {
-            height: 500px;
+            height: 450px;
             width: 700px;
         }
     }
@@ -267,5 +267,18 @@
     @media(min-width: 1200px) {
         .li {
             max-width: 1180px;
+        }
+    }
+    /* aqui foi quando desistimmos do mobile firts, desculpe Felipe */
+    
+    @media screen and (max-width: 800px) {
+        .service {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .service {
+            width: 100%;
         }
     }

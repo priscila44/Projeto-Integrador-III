@@ -163,8 +163,8 @@ nav ul li.btn.hide i:before {
 }
 
 .border {
-    width: 50%;
-    border: 1px solid #c1c9d1;
+    width: 30%;
+    border: 2px solid #d63031;
     margin: 0 auto 10px;
 }
 
@@ -449,6 +449,50 @@ footer {
 
 .banner-inicial img {
     width: 100%;
+}
+
+.services {
+    text-align: center;
+}
+
+.cen {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.service {
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.service:hover {
+    background: #ddd;
+}
+
+.service i {
+    color: #d63031;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+.service p {
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 p {
