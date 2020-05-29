@@ -11,20 +11,39 @@
 
 <body>
     <header>
-        <img class="logo" src="img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior">
-        <nav class="nav-menu">
-            <a href="inicial.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="#">Contato</a>
+        <nav>
+            <ul>
+                <img class="logo" src="/img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior">
+                <li class="items items-hover"><a href="#">Início</a></li>
+                <li class="items items-hover"><a href="#">Sobre</a></li>
+                <li class="items items-hover"><a href="#">Projetos</a></li>
+                <li class="items items-hover"><a href="#">Eventos</a></li>
+                <li class="items items-hover"><a href="#">Contato</a></li>
+                <li class=" items login "><a href="#">Login</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+
+            </ul>
+
         </nav>
-        <a href="#" class="menu-bars"><i class="fas fa-bars"></i></a>
+
     </header>
-    <hr class="linha">
-    <div class="banner-inicial"><img src="img/banner-projetos.jpg" alt=""></div>
+    <p class="title"> Projetos
+
+    </p>
+
+    <div class="photo">
+        <div>
+            <img src="img/banner-projetos.svg" alt="">
+        </div>
+        <div>
+            <p class="textsobre">A Empresa Fatec Júnior é formada por alunos comprometidos em desenvolver melhorias <span> <a href="sobre.html" style="color:#d63031">[leia mais sobre a gente clicando aqui]</a></span>.<br> Com isso, buscamos apresentar a todos ideias criadas
+                por alunos para todos. Separamos os projetos por semestre e categorias, sendo elas "in e out". A categoria "in" são para projetos criados para todos da instituição, podemos tomar como exemplo a <i>Caixinha das minas</i> que teve como finalidade
+                gerar a rede de solidareiedade de doação de absorventes íntimos nos banheiros femininos. Já a categoria "out" é referente a projetos externos, com ideias dos prórpios alunos para a sociedade sem fim lucrativos.
+            </p>
+        </div>
+    </div>
     <div>
-        <p><strong class="strong1"> Projetos da Fatec Júnior </strong></p>
+
     </div>
     <div class="item1">
         <div class="item">
@@ -108,9 +127,18 @@
             </div>
         </div>
     </footer>
-    <script src="js/function.js"></script>
+
     <script src="https://kit.fontawesome.com/1060000e07.js" crossorigin="anonymous"></script>
     <script src="js/function.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -10,6 +10,7 @@ html {
     background-color: 236, 240, 241;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 p {
@@ -17,65 +18,91 @@ p {
 }
 
 header {
+    background: #d63031;
+    padding: 5px 40px;
     height: 100px;
-    background-color: #d63031;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
+nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
 
-/* menu hamburguer ao clicar */
-
-
-/* para habilitar deixe o logo e o menu barra display:none */
-
-
-/* .menu-mobile {
-    height: 400px;
-    width: 900px;
-    background-color: #d63031;
+nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
     text-align: center;
-    z-index: 1;
+    order: 3;
 }
 
-.menu-mobile a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.items:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: white;
+    opacity: 0;
+    transition: all 0.2s linear;
 }
 
-.nav-menu-mobile a {
+nav ul li.items-hover:hover:after {
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
     text-decoration: none;
-    color: #f1f1f1;
-    font-weight: bold;
-    margin: 30px;
+    transition: .4s;
 }
 
-#login-mobile {
-    margin-top: 30px;
-    text-decoration: none;
-    color: #f1f1f1;
-    font-weight: bold;
-} */
+nav ul li i {
+    font-size: 23px;
+}
 
+nav ul li.btn {
+    display: none;
+}
 
-/* final menu burguer ao clicar */
+nav ul li.btn.hide i:before {
+    content: '\f00d';
+}
 
-.menu-bars {
+.login a {
     color: white;
     text-decoration: none;
-    font-size: 2.5rem;
-    justify-content: right;
+    border: white 2px solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    position: relative;
 }
 
-.logo {
-    margin: 20px;
-}
-
-.nav-menu,
-#login {
-    display: none;
+.login a:hover {
+    color: #d63031;
+    background-color: white;
+    transition: 0.8s linear;
 }
 
 .banner {
@@ -137,8 +164,8 @@ header {
 }
 
 .border {
-    width: 50%;
-    border: 1px solid #c1c9d1;
+    width: 30%;
+    border: 2px solid #d63031;
     margin: 0 auto 10px;
 }
 
@@ -317,6 +344,7 @@ form>button {
 
 .po {
     padding: 40px 0;
+    text-align: center;
 }
 
 .po img {
@@ -330,6 +358,10 @@ form>button {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
+}
+
+.p-desc {
+    text-align: center;
 }
 
 footer {
@@ -416,8 +448,48 @@ footer {
     background-color: #d63031;
 }
 
-.banner-inicial img {
-    width: 100%;
+.services {
+    text-align: center;
+}
+
+.cen {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.service {
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.service:hover {
+    background: #ddd;
+}
+
+.service i {
+    color: #d63031;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+}
+
+.service p {
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 p {
