@@ -10,6 +10,7 @@ html {
     background-color: 236, 240, 241;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 p {
@@ -27,7 +28,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 nav ul li {
@@ -445,10 +446,6 @@ footer {
 .linha {
     height: 1px;
     background-color: #d63031;
-}
-
-.banner-inicial img {
-    width: 100%;
 }
 
 .services {

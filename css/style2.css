@@ -39,6 +39,20 @@
     }
     
     @media screen and (min-width:1366px) {
+        .banner-inicial img {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .banner img {
+            margin-top: -250px;
+            background-position: absolute;
+            z-index: -1;
+        }
+        .btn-banner1,
+        .btn-banner2 {
+            position: relative;
+            z-index: 1;
+        }
         .btn-banner1:hover {
             color: #fff;
             background: #d63031;
