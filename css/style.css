@@ -10,7 +10,7 @@ html {
     background-color: 236, 240, 241;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 p {
@@ -419,7 +419,7 @@ footer {
 
 [data-anime] {
     opacity: 0;
-    transition: .6s;
+    transition: .4s;
 }
 
 [data-anime="left"] {
@@ -428,6 +428,10 @@ footer {
 
 [data-anime="right"] {
     transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="top"] {
+    transform: translate3d(0, -50px, 0);
 }
 
 [data-anime].animate {

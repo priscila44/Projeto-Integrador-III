@@ -39,6 +39,10 @@
     }
     
     @media screen and (min-width:1366px) {
+        .imgsobre img {
+            width: 500px;
+            height: 250px;
+        }
         .banner-inicial img {
             width: 50%;
             margin: 0 auto;
