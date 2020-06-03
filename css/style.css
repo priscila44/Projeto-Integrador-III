@@ -13,10 +13,6 @@ html {
     /* overflow-x: hidden; */
 }
 
-p {
-    color: #333333;
-}
-
 header {
     background: #d63031;
     padding: 5px 40px;
@@ -161,6 +157,7 @@ nav ul li.btn.hide i:before {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    font-size: larger;
 }
 
 .border {
@@ -442,16 +439,6 @@ footer {
 
 /* CSS DA PÁGINA INICIAL */
 
-.person label:hover {
-    opacity: 40%;
-    transition: all .4s linear;
-}
-
-.linha {
-    height: 1px;
-    background-color: #d63031;
-}
-
 .services {
     text-align: center;
 }
@@ -465,6 +452,7 @@ footer {
 
 .service {
     display: inline-block;
+    height: 291px;
     width: calc(100% / 3);
     margin: 0 -2px;
     padding: 20px;
@@ -491,38 +479,13 @@ footer {
 }
 
 .service p {
-    color: gray;
-    font-size: 15px;
+    font-size: medium;
     font-weight: 500;
 }
 
 p {
     text-align: center;
     font-size: 18px;
-}
-
-.strong1 {
-    font-size: 30px;
-    color: #d63031;
-}
-
-.ultimo {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
-    margin: 0 auto;
-    max-width: 290px;
-    padding: 30px;
-}
-
-.finn2 {
-    width: 200px;
-    height: 200px;
-    display: grid;
-    grid-gap: 10px;
-    margin: 0 auto;
-    max-width: 300px;
-    padding: 5px;
 }
 
 
@@ -549,10 +512,6 @@ COMEÇO DA PÁGINA SOBRE*/
     margin: 0 auto;
     max-width: 350px;
     padding: 15px;
-}
-
-.strong2 {
-    font-size: 20px;
 }
 
 .textsobre {

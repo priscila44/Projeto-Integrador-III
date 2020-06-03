@@ -26,7 +26,7 @@
     
     @media screen and (max-width:960px) {
         .footer-container {
-            max-width: 600px;
+            max-width: 900px;
         }
         .right-col {
             width: 100%;
@@ -43,10 +43,9 @@
             width: 500px;
             height: 250px;
         }
-        .banner-inicial img {
-            width: 50%;
+        /* .banner-inicial img {
             margin: 0 auto;
-        }
+        } */
         .banner img {
             margin-top: -250px;
             background-position: absolute;
