@@ -483,10 +483,11 @@ footer {
     font-weight: 500;
 }
 
-p {
+
+/* p {
     text-align: center;
     font-size: 18px;
-}
+} */
 
 
 /* FIM DA PÁGINA INICIAL 
@@ -516,6 +517,9 @@ COMEÇO DA PÁGINA SOBRE*/
 
 .textsobre {
     text-align: justify;
+    font-size: large;
+    font-weight: 500;
+    color: black;
 }
 
 
