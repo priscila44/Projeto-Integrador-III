@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contato - Fatec Jr.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><img class="logo" src="/img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior"></a>
+                <li class="items items-hover"><a href="index.html">Início</a></li>
+                <li class="items items-hover"><a href="sobre.html">Sobre</a></li>
+                <li class="items items-hover"><a href="projetos.html">Projetos</a></li>
+                <li class="items items-hover"><a href="eventos.html">Eventos</a></li>
+                <li class="items items-hover"><a href="contato.html">Contato</a></li>
+                <li class=" items login "><a href="#">Login</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <section class="contact">
+        <h2 class="title">Contato</h2>
+        <div class="content">
+
+            <p class="text">Não seja tímido(a), mande uma mensagem para <strike>a gente</strike> o pato Danúbio!
+            </p>
+            <form action="#" method="#">
+                <input type="text" placeholder="Nome" name="nome" class="nome" />
+                <input type="email" placeholder="E-mail" name="email" class="email" />
+                <textarea name="texto" class="nickname" cols="30" rows="10"></textarea>
+                <p class="text">Obs: o Pato Danúbio adora receber mensagens :D</p>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container ">
+            <div class="left-col ">
+                <img src="img/Logo-Fatec-Jr-RGB.svg " alt="logo da Fatec Jr. " class="logo ">
+                <div class="social-media ">
+                    <a href="# "><i class="fab fa-facebook-f "></i></a>
+                    <a href="# "><i class="fab fa-twitter "></i></a>
+                    <a href="# "><i class="fab fa-instagram "></i></a>
+                    <a href="# "><i class="fab fa-linkedin-in "></i></a>
+                </div>
+                <p>© 2020 Created By Fatec Jr. All rights reserved.</p>
+            </div>
+
+            <div class="right-col ">
+                <img src="img/logo fatec.svg " alt="logotipo Fatec Taquaritinga " class="logo1 ">
+                <img src="img/cps (1).svg " alt="Logo Centro Paula Souza " class="logo1 ">
+                <img src="img/gov2.svg " alt="Logo governo do estado de São Paulo " class="logo1 ">
+
+                <h1>Onde estamos?</h1>
+                <div class="border1 "></div>
+                <p>Av. Dr. Flávio Henrique Lemos, 585 Portal Itamaracá, Taquaritinga - SP CEP: 15906-522 .</p>
+                <p>Telefones: (16) 3252-5250 (16) 3252-5152</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/1060000e07.js " crossorigin="anonymous "></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(function() {
+                $('.items').toggleClass("show ");
+                $('ul li').toggleClass("hide ");
+            });
+        });
+    </script>
+</body>
+
+</html>
