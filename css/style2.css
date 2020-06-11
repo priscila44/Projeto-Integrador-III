@@ -43,9 +43,6 @@
             width: 500px;
             height: 250px;
         }
-        /* .banner-inicial img {
-            margin: 0 auto;
-        } */
         .banner img {
             margin-top: -250px;
             background-position: absolute;
@@ -171,69 +168,7 @@
             flex-flow: wrap;
         }
     }
-    
-    @media(min-width: 600px) {
-        .fnn {
-            width: 160px;
-            height: 160px;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 50px;
-            margin: 0 auto;
-            max-width: 450px;
-            padding: 5px;
-        }
-        .ultimo {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-gap: 50px;
-            margin: 0 auto;
-            max-width: 420px;
-            padding: 30px;
-        }
-        .finn2 {
-            width: 200px;
-            height: 200px;
-            display: grid;
-            grid-gap: 10px;
-            margin: 0 auto;
-            max-width: 400px;
-            padding: 5px;
-        }
-    }
-    
-    @media(min-width: 1000px) {
-        .inn {
-            width: 160px;
-            height: 160px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            max-width: 1000px;
-            padding: 5px;
-        }
-        .ultimo {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
-            margin: 0 auto;
-            max-width: 850px;
-            padding: 25px;
-        }
-        .ultimo img {
-            margin-top: -50px;
-        }
-        .finn2 {
-            width: 200px;
-            height: 200px;
-            display: grid;
-            grid-gap: 10px;
-            margin: 0 auto;
-            max-width: 600px;
-            padding: 5px;
-        }
-    }
-    
-    @media(min-width: 400px) {
+    /* @media(min-width: 400px) {
         .li {
             max-width: 380px;
         }
@@ -285,7 +220,7 @@
         .li {
             max-width: 1180px;
         }
-    }
+    } */
     /* aqui foi quando desistimmos do mobile firts, desculpe Felipe */
     
     @media screen and (max-width: 800px) {
@@ -297,5 +232,23 @@
     @media screen and (max-width: 500px) {
         .service {
             width: 100%;
+        }
+    }
+    
+    @media screen and (max-width:960px) {
+        .gallery-section .image {
+            flex: 33.33%;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .gallery-section .image {
+            flex: 50%;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .gallery-section .image {
+            flex: 100%;
         }
     }

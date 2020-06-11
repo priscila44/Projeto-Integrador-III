@@ -13,7 +13,7 @@ const debounce = function(func, wait, immediate) {
     };
 };
 
-
+//maquina de escrever
 const target = document.querySelectorAll('[data-anime]');
 const animationClass = 'animate';
 
@@ -36,3 +36,29 @@ if (target.length) {
         console.log
     }, 200))
 }
+
+// função que cria a animação
+
+function typeWriter(elemento) {
+
+    const textoArray = elemento.innerHTML.split('');
+
+
+    //limpar
+    elemento.innerHTML = '';
+
+
+    //forEach -> para cada
+
+    // i -> index, onde cada letra se encontra
+    textoArray.forEach((letra, i) => { // seria a mesma coisa que criar: textoArray.forEach(function(letra,i))
+        setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+}
+
+
+// variável constante, pois ela não irá mudar.
+const titulo = document.querySelector('h1');
+
+//ativar a função
+typeWriter(titulo);
