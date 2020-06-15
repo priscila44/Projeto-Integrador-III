@@ -95,9 +95,9 @@
             </div>
 
             <div class="right-col ">
-                <img src="img/logo fatec.svg " alt="logotipo Fatec Taquaritinga " class="logo1 ">
+                <!-- <img src="img/logo fatec.svg " alt="logotipo Fatec Taquaritinga " class="logo1 ">
                 <img src="img/cps (1).svg " alt="Logo Centro Paula Souza " class="logo1 ">
-                <img src="img/gov2.svg " alt="Logo governo do estado de São Paulo " class="logo1 ">
+                <img src="img/gov2.svg " alt="Logo governo do estado de São Paulo " class="logo1 "> -->
 
                 <h2>Onde estamos?</h2>
                 <div class="border1 "></div>
@@ -109,7 +109,6 @@
     </footer>
     <script src="js/function.js "></script>
     <script src="https://kit.fontawesome.com/1060000e07.js " crossorigin="anonymous "></script>
-    <script src="js/function.js "></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         $(document).ready(function() {
@@ -119,33 +118,7 @@
             });
         });
     </script>
-    <script>
-        // função que cria a animação
 
-        function typeWriter(elemento) {
-
-            const textoArray = elemento.innerHTML.split('');
-
-
-            //limpar
-            elemento.innerHTML = '';
-
-
-            //forEach -> para cada
-
-            // i -> index, onde cada letra se encontra
-            textoArray.forEach((letra, i) => { // seria a mesma coisa que criar: textoArray.forEach(function(letra,i))
-                setTimeout(() => elemento.innerHTML += letra, 75 * i);
-            });
-        }
-
-
-        // variável constante, pois ela não irá mudar.
-        const titulo = document.querySelector('h1');
-
-        //ativar a função
-        typeWriter(titulo);
-    </script>
 </body>
 
 </html>
