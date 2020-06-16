@@ -13,95 +13,58 @@ html {
     /* overflow-x: hidden; */
 }
 
-header {
-    background: #d63031;
-    padding: 5px 40px;
-    height: 100px;
-}
-
-nav ul {
+li {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 
-nav ul li {
-    padding: 10px 0;
-    cursor: pointer;
-}
-
-nav ul li.items {
-    position: relative;
-    width: auto;
-    margin: 0 16px;
-    text-align: center;
-    order: 3;
-}
-
-.items:after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 5px;
-    height: 2px;
-    width: 100%;
-    background: white;
-    opacity: 0;
-    transition: all 0.2s linear;
-}
-
-nav ul li.items-hover:hover:after {
-    opacity: 1;
-    bottom: 8px;
-}
-
-nav ul li.logo {
-    flex: 1;
-    color: white;
-    font-size: 23px;
-    font-weight: 600;
-    cursor: default;
-    user-select: none;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    transition: .4s;
-}
-
-nav ul li i {
-    font-size: 23px;
-}
-
-nav ul li.btn {
+.desktop {
     display: none;
 }
 
-nav ul li.btn.hide i:before {
-    content: '\f00d';
+.btnMenu {
+    display: block;
+    background-color: #d63031;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    text-indent: -9999px;
+    padding: 20px 15px;
 }
 
-.login a {
-    color: white;
-    text-decoration: none;
-    border: white 2px solid;
-    border-radius: 20px;
-    padding: 5px 20px;
-    cursor: pointer;
-    position: relative;
+.btnMenu_open {
+    background-image: url(/img/open-menu.svg);
 }
 
-.login a:hover {
-    color: #d63031;
+.btnMenu_close {
+    background-image: url(/img/close.svg);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
     background-color: white;
-    transition: 0.8s linear;
 }
 
-.logo,
+.menu_open {
+    transform: translateX(0);
+}
+
+.menu-item {
+    padding: 20px 15px;
+    border-bottom: 1px solid #d63031;
+}
+
+.menu-item-action {
+    color: #d63031;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+}
+
 .logo1 {
     width: 180px
 }

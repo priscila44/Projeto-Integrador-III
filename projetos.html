@@ -12,20 +12,44 @@
 
 <body>
     <header>
-        <nav>
+        <nav class="desktop">
             <ul>
-                <a href="index.html"><img class="logo" src="/img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior"></a>
+                <a href="index.html"><img class="logo" src="img/Logo-Fatec-Jr-RGB1.svg" alt="logo da empresa júnior"></a>
                 <li class="items items-hover"><a href="index.html">Início</a></li>
                 <li class="items items-hover"><a href="sobre.html">Sobre</a></li>
                 <li class="items items-hover"><a href="projetos.html">Projetos</a></li>
                 <li class="items items-hover"><a href="eventos.html">Eventos</a></li>
                 <li class="items items-hover"><a href="contato.html">Contato</a></li>
                 <li class=" items login "><a href="#">Login</a></li>
-                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
 
             </ul>
 
         </nav>
+        <div>
+            <a href="#menu" class="btnMenu btnMenu_open">Menu</a>
+            <ul id="menu" class="menu">
+                <li class="btnMenu btnMenu_close">Sair</li>
+                <li class="menu-item">
+                    <a href="index.html" class="menu-item-action">Início</a>
+                </li>
+                <li class="menu-item">
+                    <a href="sobre.html" class="menu-item-action">Sobre</a>
+                </li>
+                <li class="menu-item">
+                    <a href="projetos.html" class="menu-item-action">Projetos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="eventos.html" class="menu-item-action">Eventos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contato.html" class="menu-item-action">Contato</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-item-action">Login</a>
+                </li>
+            </ul>
+        </div>
+
 
     </header>
 
@@ -34,7 +58,7 @@
         <h1 class="title1"> Envie seu projeto você também!
         </h1>
         <a href="#gotoprj" class="btn-banner2"> Nossos projetos</a>
-        <img src="img/banner-projetos1.svg" alt="banner da fatec jr.">
+        <img src="img/foguete-inicial.svg" alt="banner da fatec jr.">
 
     </section>
     <section class="wrapper-section">
@@ -42,7 +66,7 @@
             <h2 class="title" id="gotoform">Projetos Jr.</h2>
             <hr class="border" />
 
-            <p>
+            <p class="textsobre">
                 A Empresa Fatec Júnior é formada por alunos comprometidos em desenvolver melhorias <span> <a href="sobre.html" style="color:#d63031">[leia mais sobre a gente clicando aqui]</a></span>.<br> Com isso, buscamos apresentar a todos ideias criadas
                 por alunos para todos. Separamos os projetos por semestre e categorias, sendo elas "in e out". A categoria "in" são para projetos criados para todos da instituição, podemos tomar como exemplo a <i>Caixinha das minas</i> que teve como finalidade
                 gerar a rede de solidariedade de doação de absorventes íntimos nos banheiros femininos. Já a categoria "out" é referente a projetos externos, com ideias dos prórpios alunos para a sociedade sem fins lucrativos, temos como exemplo o projeto
@@ -150,10 +174,6 @@
             </div>
 
             <div class="right-col ">
-                <!-- <img src="img/logo fatec.svg " alt="logotipo Fatec Taquaritinga " class="logo1 ">
-                <img src="img/cps (1).svg " alt="Logo Centro Paula Souza " class="logo1 ">
-                <img src="img/gov2.svg " alt="Logo governo do estado de São Paulo " class="logo1 "> -->
-
                 <h2>Onde estamos?</h2>
                 <div class="border1 "></div>
                 <p>Av. Dr. Flávio Henrique Lemos, 585 Portal Itamaracá, Taquaritinga - SP CEP: 15906-522 .</p>
@@ -168,15 +188,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.btn').click(function() {
-                $('.items').toggleClass("show");
-                $('ul li').toggleClass("hide");
-            });
-        });
-    </script>
-
     <script>
         $(".gallery").magnificPopup({
             delegate: 'a',
