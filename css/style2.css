@@ -87,21 +87,6 @@
             width: 180px
         }
     }
-    /* footer */
-    
-    @media screen and (max-width:960px) {
-        .footer-container {
-            max-width: 900px;
-        }
-        .right-col {
-            width: 100%;
-            margin-bottom: 60px;
-        }
-        .left-col {
-            width: 100%;
-            text-align: center;
-        }
-    }
     
     @media screen and (min-width:1366px) {
         .imgsobre img {
@@ -230,6 +215,36 @@
         }
     }
     /* aqui foi quando desistimmos do mobile firts, desculpe Felipe */
+    /* footer */
+    
+    @media(max-width:610px) {
+        .text-footer {
+            font-size: 14px;
+        }
+        .list-footer li a {
+            padding: 10px;
+            font-size: 12px;
+        }
+        .social-media i {
+            font-size: 15px;
+        }
+    }
+    
+    @media(max-width:470px) {
+        .text-footer {
+            font-size: 12px;
+        }
+        .list-footer li a {
+            padding: 5px;
+        }
+    }
+    
+    @media(max-width:330px) {
+        .text-footer {
+            font-size: 10px;
+        }
+    }
+    /* fim footer */
     /* galeria de imgs */
     
     @media screen and (max-width: 800px) {
