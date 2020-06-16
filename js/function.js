@@ -12,6 +12,18 @@ const debounce = function(func, wait, immediate) {
         if (callNow) func.apply(context, args);
     };
 };
+//menu
+const $menu = document.querySelector('.menu');
+const $btnMenuOpen = document.querySelector('.btnMenu_open');
+const $btnMenuClose = document.querySelector('.btnMenu_close');
+
+$btnMenuOpen.addEventListener('click', function() {
+    $menu.classList.add('menu_open')
+})
+
+$btnMenuClose.addEventListener('click', function() {
+    $menu.classList.remove('menu_open')
+})
 
 //maquina de escrever
 const target = document.querySelectorAll('[data-anime]');
